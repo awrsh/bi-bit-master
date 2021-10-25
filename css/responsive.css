@@ -40,7 +40,7 @@
     width: 90px;
   }
   .swap-box-table .custom-table tbody th, .swap-box-table .custom-table tbody td{
-    width: 160px;
+    /* width: 160px; */
   }
   .swap select,
   .swap input,
@@ -117,7 +117,9 @@
     border-color: orange;
   }
 
-
+.swap-desktop {
+  display: none;
+}
   .swap-box .iconer{
     order: 1;
   }
@@ -309,7 +311,7 @@
   }
 }
 @media (min-width: 768px) {
-  .search-idea-responsive {
+  .search-idea-responsive , .swap-mobile {
     display: none;
   }
 }
