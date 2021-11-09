@@ -135,7 +135,7 @@
             </div>
         </div>
     </aside>
-    <main id="about-page">
+    <main id="about-page" class="w-95 m-auto">
         <div class="container">
             <div class="row">
                 <div class="chart">
@@ -171,113 +171,253 @@
                         </div>
                     </div>
                     <div class="main-chart">
-                        <div class="col-md-5 col-12" style="overflow: auto; height: 450px">
-                            <div class="table-responsive">
-                                <table class="table table-striped custom-table">
+                        <div class="col-lg-5 col-12" style="height: 450px">
+                            <div class="swap-box-table swap-chart d-block  row p-2 " data-aos="fade-up" style="background-color: #001952;">
+                                <table class="table custom-table">
+                    <input type="text" class="form-control serach-chart" placeholder="جستجو کنید" required="">
                                     <thead>
                                         <tr>
-                                            <th scope="col">نام ارز</th>
-                                            <th scope="col">قیمت جهانی</th>
-                                            <th scope="col">تغییرات</th>
+                                            <th>نوع ارز دیجیتال</th>
+                                            <!-- <th>علامت اختصاری</th> -->
+                                            <th>قیمت </th>
+                                            <!-- <th>قیمت به تومان</th> -->
+                                            <th>درصد تغییرات</th>
+                                            <!-- <th>نمودار تغییرات</th> -->
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr scope="row">
-                                            <td>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
-                                        <tr scope="row">
-                                            <td>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
-                                        <tr scope="row">
-                                            <td>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
-                                        <tr scope="row">
-                                            <td>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
-                                        <tr scope="row">
-                                            <td>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
-                                        <tr scope="row">
-                                            <td>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
                                         <tr>
                                             <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین کش</p>
+                                                </div>
                                                 <img src="img/crypto/Group 155.png" alt="">
-                                                <p>BTC</p>
                                             </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+                                            <td class="text-success font-weight-bold" >+ 8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">USDT</p>
+                                                    <p class="text-muted">تتر</p>
+                                                </div>
                                                 <img src="img/crypto/Group 156.png" alt="">
-                                                <p>BTC</p>
                                             </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-gray">+ 8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">LTC</p>
+                                                    <p class="text-muted">لایت کوین</p>
+                                                </div>
                                                 <img src="img/crypto/Group 158.png" alt="">
-                                                <p>BTC</p>
                                             </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <img src="img/crypto/Group 159.png" alt="">
-                                                <p>BTC</p>
-                                            </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">ETH</p>
+                                                    <p class="text-muted">اتریوم</p>
+                                                </div>
                                                 <img src="img/crypto/Group 172.png" alt="">
-                                                <p>BTC</p>
                                             </td>
-                                            <td>0.46%</td>
-                                            <td>6.42%</td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
-                                        <tr class="spacer">
-                                            <td colspan="100"></td>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-green">+ 8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">بیت کوین</p>
+                                                </div>
+                                                <img src="img/crypto/Group 153.png" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+        
+                                            <td class="text-green">+ 8 %</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="col-md-7 col-12">
+                        <div class="col-lg-7 col-12">
                             <!-- TradingView Widget BEGIN -->
                             <div class="tradingview-widget-container">
                                 <div id="tradingview_fc5b9"></div>
@@ -290,7 +430,7 @@
                             </div>
                             <!-- TradingView Widget END -->
                         </div>
-                        <div class="col-md-6 col-12">
+                        <div class="col-md-6 col-12 pr-0">
                             <div class="table-responsive custom-table">
                                 <h6><img src="img/icon-social/Iconly-Light-outline-Arrow - Up 3.png" alt=""><span
                                         class="mr-2">فروشندگان</span></h6>
@@ -303,50 +443,50 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr scope="row">
-                                            <td>
+                                        <tr scope="row" >
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 155.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 156.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 158.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 159.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 172.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
@@ -374,49 +514,49 @@
                                     </thead>
                                     <tbody>
                                         <tr scope="row">
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 153.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 155.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 156.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 158.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 159.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
                                         </tr>
                                         <tr>
-                                            <td>
+                                            <td  class="justify-content-center">
                                                 <img src="img/crypto/Group 172.png" alt="">
-                                                <p>BTC</p>
+                                                <p class="mr-2">BTC</p>
                                             </td>
                                             <td>0.46%</td>
                                             <td>6.42%</td>
@@ -436,7 +576,7 @@
     <!-- Footer -->
     <footer>
         <div class="container-fluid">
-            <div class="row p-5 footer-order""> 
+            <div class="row p-5 footer-order"> 
                 <div class=" col-12 col-md-6 col-lg-2 col-xl-4 mx-auto mb-4 text-right">
                 <h6 class="fw-bold mb-4 d-flex align-items-center  ">
                     <img src="img/Logo/345.png" alt="">

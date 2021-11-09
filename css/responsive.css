@@ -153,12 +153,12 @@
   }
   .custom-table thead th,
   .custom-table tbody td {
-    width: 50px;
+    /* width: 50px; */
     padding: 15px 0;
   }
   .swap-box-table table * {
     font-size: 12px;
-}
+  }
   /* End index */
 
   .copyright {
@@ -321,6 +321,11 @@
   }
   .select-crypto {
     order: 2;
+  }
+  .custom-table thead, .custom-table tbody tr  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 @media (min-width: 768px) {
@@ -560,4 +565,16 @@
   .accordion .accordion-title {
     font-size: var(--font-size-12);
   }
+}
+
+@media (max-width:480px) {
+  .icon-container {
+    width: 70px;
+    height: 45px;
+  }
+}
+
+
+.w-95 {
+  width: 95% !important;
 }

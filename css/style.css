@@ -254,7 +254,9 @@ header {
 .nav-links-menu {
   flex: 2;
 }
+.nav-link.active{
 
+}
 .log-sign {
   display: flex;
   justify-content: center;
@@ -329,7 +331,7 @@ header {
 .nav-link:hover a {
   color: var(--color-orange);
 }
-.nav-link::after {
+.nav-link.active::after {
   content: "";
   position: absolute;
   width: 0px;
@@ -2179,8 +2181,28 @@ button {
   font-size: 13px;
 }
 .tradingview-widget-container {
-  height: 100% !important;
+  height: 445px !important;
 }
+.serach-chart {
+  padding: 20px;
+  border: 2px solid rgb(67, 67, 67);
+  width: 95%;
+  height: 65px;
+  margin: 10px auto;
+}
+.serach-chart::placeholder {
+  text-align: center;
+}
+.swap-chart .custom-table thead th, .swap-chart .custom-table tbody td {
+  width: 145px;
+}
+.swap-chart table * {
+  font-size: 13px !important;
+}
+.swap-chart .custom-table tbody {
+  max-height: 320px !important;
+}
+ 
 /* --------------------------------- Chart ------------------------ */
 /* --------------------------------- Index ------------------------ */
 body#index .row {
@@ -2371,15 +2393,15 @@ body#index header {
 .swap-box-table {
   background: var(--color-navy-blue);
   border-radius: 12px;
-  overflow-x: auto;
-  height: 450px;
+  overflow: hidden;
+  height: 445px;
 
 }
 .swap-box-table table {
   background: none;
 }
 .swap-box-table .custom-table tbody th, .swap-box-table .custom-table tbody td{
-  width: auto;
+  /* width: auto; */
 }
 .swap-box-table .custom-table  tbody {
   display: block;
@@ -2391,7 +2413,6 @@ body#index header {
   max-height: 350px;
   overflow-y: auto;
 }
-
 .custom-table thead, .custom-table tbody tr {
   display: table;
   width: 100%;
@@ -2412,7 +2433,7 @@ body#index header {
 .swap-box-table table td:first-child {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .swap-box-table table td p {
