@@ -2194,7 +2194,8 @@ button {
   text-align: center;
 }
 .swap-chart .custom-table thead th, .swap-chart .custom-table tbody td {
-  width: 145px;
+  /* width: 145px; */
+  /* width: auto; */
 }
 .swap-chart table * {
   font-size: 13px !important;
