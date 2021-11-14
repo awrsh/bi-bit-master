@@ -2420,7 +2420,7 @@ body#index header {
   table-layout: fixed;
 }
 .swap-box-table thead {
-  width: calc( 100% - 1.1em );
+width: 100%;
 }
 
 .swap-box-table table * {

@@ -12,6 +12,9 @@
   .swap {
     padding: 0 !important;
   }
+.swap-box-table .custom-table tbody td:nth-child(2) {
+  text-align: right;
+}
   .main-slider-slider {
     order: 1;
   }
@@ -43,7 +46,9 @@
   }
   .swap-box-table .custom-table tbody th,
   .swap-box-table .custom-table tbody td {
-    width: 120px;
+    /* width: 120px;
+     */
+     width: 100%;
   }
   .swap select,
   .swap input,
@@ -155,6 +160,9 @@
   .custom-table tbody td {
     /* width: 50px; */
     padding: 15px 0;
+  }
+  .custom-table thead th:nth-child(1) {
+    text-align: center;
   }
   .swap-box-table table * {
     font-size: 12px !important;
