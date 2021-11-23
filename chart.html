@@ -8,10 +8,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>صفحه اصلی</title>
     <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <style>
+        @media (max-width: 767px) {
+
+            .custom-table thead th,
+            .custom-table tbody td {
+                width: 95px;
+                padding: 15px 0;
+            }
+
+            .crp-1 {
+                /* width: 100px !important; */
+                text-align: right !important;
+            }
+
+            .crp-2 {
+                /* width: 130px !important; */
+                text-align: center !important;
+            }
+
+            .crp-3 {
+                /* width: 55px !important; */
+                text-align: left !important;
+            }
+
+            .custom-table tbody tr td:first-child {
+                width: 90px;
+            }
+            .swap-box-table .custom-table tbody td:nth-child(2) p {
+                text-align: right;
+            }
+        }
+
+        .custom-table2 tbody tr td:first-child {
+            display: table-cell;
+        }
+
+        .swap-box-table table * {
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -170,95 +210,169 @@
                             </ul>
                         </div>
                     </div>
+                    <style>
+                        .swap-box-table .custom-table tbody th,
+                        .swap-box-table .custom-table tbody td {
+                            width: auto;
+                        }
+
+                        @media (max-width:767px) {
+                            .table .table-striped .custom-table tr td:first-child {
+                                width: 120px;
+                            }
+
+                        }
+                    </style>
                     <div class="main-chart">
-                        <div class="col-lg-5 col-12" style="height: 450px">
-                            <div class="swap-box-table swap-chart d-block  row p-2 " data-aos="fade-up" style="background-color: #001952;">
+                        <div class="col-lg-5 col-12 mt-md-2" style="height: 450px">
+                            <div class="swap-box-table swap-mobile d-block  row" data-aos="fade-up"
+                                style="background-color: rgb(0, 25, 82);">
+                                <input type="text" class="form-control serach-chart" placeholder="جستجو کنید"
+                                    required="">
                                 <table class="table custom-table">
-                    <input type="text" class="form-control serach-chart" placeholder="جستجو کنید" required="">
                                     <thead>
-                                        <tr>
+                                        <tr class="d-flex align-items-center justify-content-between w-100 pb-1">
                                             <th>نوع ارز دیجیتال</th>
                                             <!-- <th>علامت اختصاری</th> -->
                                             <th>قیمت </th>
                                             <!-- <th>قیمت به تومان</th> -->
-                                            <th>  تغییرات</th>
+                                            <th>درصد تغییرات</th>
                                             <!-- <th>نمودار تغییرات</th> -->
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column  ">
                                                     <p class="text-right">BTC</p>
-                                                    <p class="text-muted">بیت کوین کش</p>
+                                                    <p class="text-muted">بیت کوین</p>
                                                 </div>
                                                 <img src="img/crypto/Group 155.png" alt="">
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                <div class="d-flex flex-column">
+                                                    <div>
+                                                        <p class="font-weight-bold">$ 55212</p>
+                                                        <p class="text-muted">93,545,321 تومان</p>
+                                                    </div>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-                                            <td class="text-success font-weight-bold" >+ 8 %</td>
+                                            <td class="text-success font-weight-bold">+ 8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="text-right">USDT</p>
-                                                    <p class="text-muted">تتر</p>
+                                                <div class="d-flex flex-column  ">
+                                                    <p class="text-right">BTC</p>
+                                                    <p class="text-muted">ترون</p>
                                                 </div>
-                                                <img src="img/crypto/Group 156.png" alt="">
+                                                <img src="img/crypto/trx.d986d6a.svg" alt="">
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-gray">+ 8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex flex-column ">
-                                                    <p class="text-right">LTC</p>
-                                                    Group 172.png
+                                                    <p class="text-right">DOGE</p>
+                                                    <p class="text-muted">دوج کوین</p>
                                                 </div>
-                                                <img src="img/crypto/Group 158.png" alt="">
+                                                <img src="img/crypto/dog.svg" alt="">
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column  ">
                                                     <p class="text-right">ETH</p>
                                                     <p class="text-muted">اتریوم</p>
                                                 </div>
-                                                <img src="img/crypto/Group 172.png" alt="">
+                                                <img src="img/crypto/eth.svg" alt="">
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column  ">
+                                                    <p class="text-right">BNB</p>
+                                                    <p class="text-muted">باینانس کوین</p>
+                                                </div>
+                                                <img src="img/crypto/bnb.svg" style="width: 32px;" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column  ">
+                                                    <p class="text-right">XRP</p>
+                                                    <p class="text-muted">ریپل</p>
+                                                </div>
+                                                <img src="img/crypto/xrp.svg" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+
+                                            <td class="text-danger font-weight-bold"> -8 %</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column  ">
+                                                    <p class="text-right">DYDX</p>
+                                                    <p class="text-muted">دی وای دی ایکس</p>
+                                                </div>
+                                                <img src="img/crypto/dydx.svg" style="width: 32px;" alt="">
+                                            </td>
+                                            <!-- <td>BTC</td> -->
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
+
                                             <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
                                         <tr>
@@ -271,13 +385,13 @@
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
                                         <tr>
@@ -290,13 +404,13 @@
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
                                         <tr>
@@ -309,13 +423,13 @@
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-danger font-weight-bold"> -8 %</td>
                                         </tr>
                                         <tr>
@@ -328,75 +442,18 @@
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
-                                            <td class="text-danger font-weight-bold"> -8 %</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="text-right">BTC</p>
-                                                    <p class="text-muted">بیت کوین</p>
-                                                </div>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                            </td>
-                                            <!-- <td>BTC</td> -->
-                                            <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
-                                            <td class="text-danger font-weight-bold"> -8 %</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="text-right">BTC</p>
-                                                    <p class="text-muted">بیت کوین</p>
-                                                </div>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                            </td>
-                                            <!-- <td>BTC</td> -->
-                                            <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
-                                            <td class="text-danger font-weight-bold"> -8 %</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="text-right">BTC</p>
-                                                    <p class="text-muted">بیت کوین</p>
-                                                </div>
-                                                <img src="img/crypto/Group 153.png" alt="">
-                                            </td>
-                                            <!-- <td>BTC</td> -->
-                                            <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                            <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-green">+ 8 %</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="text-right">BTC</p>
                                                     <p class="text-muted">بیت کوین</p>
                                                 </div>
@@ -404,20 +461,20 @@
                                             </td>
                                             <!-- <td>BTC</td> -->
                                             <td>
-                                                <div class="d-flex flex-column ">
+                                                <div class="d-flex flex-column">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                             <!-- <td class="font-weight-bold">875.240.000</td> -->
-        
+
                                             <td class="text-green">+ 8 %</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="col-lg-7 col-12">
+                        <div class="col-lg-7 col-12 pl-0 mt-md-2">
                             <!-- TradingView Widget BEGIN -->
                             <div class="tradingview-widget-container">
                                 <div id="tradingview_fc5b9"></div>
@@ -430,21 +487,21 @@
                             </div>
                             <!-- TradingView Widget END -->
                         </div>
-                        <div class="col-md-6 col-12">
-                            <div class="table-responsive custom-table">
+                        <div class="col-lg-6 col-12 pr-0 mt-md-2">
+                            <div class="table-responsive custom-table custom-table2 p-0">
                                 <h6><img src="img/icon-social/Iconly-Light-outline-Arrow - Up 3.png" alt=""><span
                                         class="mr-2">فروشندگان</span></h6>
                                 <table class="table table-striped custom-table">
                                     <thead>
-                                        <tr>
-                                            <th scope="col">مقدار Btc</th>
-                                            <th scope="col">قیمت واحد</th>
-                                            <th scope="col">قیمت کل</th>
+                                        <tr class="d-flex align-items-center justify-content-around w-100">
+                                            <th scope="col" class="crp-1">نام ارز</th>
+                                            <th scope="col" class="crp-2">قیمت جهانی</th>
+                                            <th scope="col" class="crp-3">تغییرات</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr scope="row" >
-                                            <td  class="justify-content-center">
+                                        <tr scope="row" class="crp-4">
+                                            <td class="justify-content-center">
                                                 <p class="mr-2">BTC</p>
                                             </td>
                                             <td>
@@ -453,95 +510,92 @@
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-
+                                        <tr class="crp-5">
+                                            <td class="justify-content-center">
                                                 <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
-                                            </td>
-                                           <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                          <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
-                                            </td>
-                                           <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                          <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-
+                                        <tr class="crp-6">
+                                            <td class="justify-content-center">
                                                 <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-
+                                        <tr class="crp-7">
+                                            <td class="justify-content-center">
                                                 <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="crp-8">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="crp-9">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
@@ -555,117 +609,117 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
-                            <div class="table-responsive custom-table">
+                        <div class="col-lg-6 col-12 pl-0 mt-md-2">
+                            <div class="table-responsive custom-table custom-table2">
                                 <h6>
                                     <img src="img/icon-social/Arrow - Up 3.png" alt="">
                                     <span class="mr-2">خریداران</span>
                                 </h6>
                                 <table class="table table-striped custom-table">
                                     <thead>
-                                        <tr>
-                                            <th scope="col">نام ارز</th>
-                                            <th scope="col">قیمت جهانی</th>
-                                            <th scope="col">تغییرات</th>
+                                        <tr class="d-flex align-items-center justify-content-around w-100">
+                                            <th scope="col" class="crp-1">نام ارز</th>
+                                            <th scope="col" class="crp-2">قیمت جهانی</th>
+                                            <th scope="col" class="crp-3">تغییرات</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr scope="row">
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
+                                        <tr scope="row" class="crp-4">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
-                                            </td>
-                                           <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                          <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
+                                        <tr class="crp-5">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
-                                            </td>
-                                           <td>
-                                                <div class="d-flex flex-column ">
-                                                    <p class="font-weight-bold">$ 55212</p>
-                                                    <p class="text-muted">93,545,321 تومان</p>
-                                                </div>
-                                            </td>
-                                          <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
+                                        <tr class="crp-6">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td  class="justify-content-center">
-                                                 <p class="mr-2">BTC</p>
+                                        <tr class="crp-7">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
                                             </td>
-                                           <td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
                                                 </div>
                                             </td>
-                                          <td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="crp-8">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="crp-9">
+                                            <td class="justify-content-center">
+                                                <p class="mr-2">BTC</p>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column ">
+                                                    <p class="font-weight-bold">$ 55212</p>
+                                                    <p class="text-muted">93,545,321 تومان</p>
+                                                </div>
+                                            </td>
+                                            <td>
                                                 <div class="d-flex flex-column ">
                                                     <p class="font-weight-bold">$ 55212</p>
                                                     <p class="text-muted">93,545,321 تومان</p>
@@ -687,152 +741,154 @@
     <!-- Footer -->
     <footer>
         <div class="container-fluid">
-            <div class="row p-5 footer-order"> 
+            <div class="row p-5 footer-order">
                 <div class=" col-12 col-md-6 col-lg-2 col-xl-4 mx-auto mb-4 text-right">
-                <h6 class="fw-bold mb-4 d-flex align-items-center  ">
-                    <img src="img/Logo/345.png" alt="">
-                    <span class="mx-3">بی بیت</span>
-                    <div>
-                        <span class="text-white" style="font-size: 12px;">پلتفرم خرید و فروش ارز های دیجیتال</span>
-                    </div>
-                </h6>
-                <ul>
-                    <li>
-                        <p class="text-justify">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از درد طراحان
-                            گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان را که لازم است و برای
-                            شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف های بهبودی ابزارهای کاربردی می
-                            باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
-                            می طلبد
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-right">
-                <h6 class="fw-bold mb-4">دسترسی سریع</h6>
-                <ul>
-                    <li>
-                        <a href="#!" class="">حساب کاربری</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">درباره بی بیت</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">تماس با پشتیبانی</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">وبلاگ</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">استخر استخراج </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-right">
-                <h6 class="fw-bold mb-4">خدمات بی بیت</h6>
-                <ul>
-                    <li>
-                        <a href="#!" class="">خرید و فروش سریع</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">مشاوره کریپتوکارنسی</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">کیف پول فیزیکی </a>
-                    </li>
-                    <li>
-                        <a href="#!" class="">فروشگاه</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-7 col-lg-4 col-xl-4 mb-4 text-right">
-                <ul class="info-footer">
-                    <li>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#"><img src="img/icon-social/Iconly-Bold-Calling.png" alt="Cisi Chicken"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="caption">
-                                    <p><a href="product.html">پشتیبانی تلفنی از ساعت 8 الی 20</a></p>
+                    <h6 class="fw-bold mb-4 d-flex align-items-center  ">
+                        <img src="img/Logo/345.png" alt="">
+                        <span class="mx-3">بی بیت</span>
+                        <div>
+                            <span class="text-white" style="font-size: 12px;">پلتفرم خرید و فروش ارز های دیجیتال</span>
+                        </div>
+                    </h6>
+                    <ul>
+                        <li>
+                            <p class="text-justify">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از درد طراحان
+                                گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان را که لازم است و برای
+                                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف های بهبودی ابزارهای کاربردی می
+                                باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+                                می طلبد
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-right">
+                    <h6 class="fw-bold mb-4">دسترسی سریع</h6>
+                    <ul>
+                        <li>
+                            <a href="#!" class="">حساب کاربری</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">درباره بی بیت</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">تماس با پشتیبانی</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">وبلاگ</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">استخر استخراج </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-right">
+                    <h6 class="fw-bold mb-4">خدمات بی بیت</h6>
+                    <ul>
+                        <li>
+                            <a href="#!" class="">خرید و فروش سریع</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">مشاوره کریپتوکارنسی</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">کیف پول فیزیکی </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="">فروشگاه</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-7 col-lg-4 col-xl-4 mb-4 text-right">
+                    <ul class="info-footer">
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#"><img src="img/icon-social/Iconly-Bold-Calling.png"
+                                            alt="Cisi Chicken"></a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="caption">
+                                        <p><a href="product.html">پشتیبانی تلفنی از ساعت 8 الی 20</a></p>
 
-                                    <div class="blog-title2 mt-2">
-                                        <span class="blog-title2-new">021 - 44700730</span>
-                                        <span class="blog-title2-new">+98 9388812165</span>
+                                        <div class="blog-title2 mt-2">
+                                            <span class="blog-title2-new">021 - 44700730</span>
+                                            <span class="blog-title2-new">+98 9388812165</span>
+                                        </div>
+
                                     </div>
 
                                 </div>
-
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media-left">
-                                <a href="#"><img src="img/icon-social/Iconly-Bold-Message.png" alt="Cisi Chicken"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="caption">
-                                    <p><a href="product.html"> پشتیبانی ایمیل</a></p>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#"><img src="img/icon-social/Iconly-Bold-Message.png"
+                                            alt="Cisi Chicken"></a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="caption">
+                                        <p><a href="product.html"> پشتیبانی ایمیل</a></p>
 
-                                    <div class="blog-title2 mt-2">
-                                        <span class="blog-title2-new">Bibit_crypto@support.ir</span>
+                                        <div class="blog-title2 mt-2">
+                                            <span class="blog-title2-new">Bibit_crypto@support.ir</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media">
-                            <div class="media-left" style="background-color: #FF8000;">
-                                <a href="#"><img src="img/icon-social/Iconly-Bold-Send.png" alt="Cisi Chicken"></a>
-                            </div>
-                            <div class="media-body">
-                                <div class="caption">
-                                    <p><a href="product.html">تیکت به پشتیبانی</a></p>
+                        </li>
+                        <li>
+                            <div class="media">
+                                <div class="media-left" style="background-color: #FF8000;">
+                                    <a href="#"><img src="img/icon-social/Iconly-Bold-Send.png" alt="Cisi Chicken"></a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="caption">
+                                        <p><a href="product.html">تیکت به پشتیبانی</a></p>
 
-                                    <div class="blog-title2 mt-2">
-                                        <span class="blog-title2-new">برای ارسال تیکت به پشتیبانی <a href="">کلیک
-                                                کنید</a></span>
+                                        <div class="blog-title2 mt-2">
+                                            <span class="blog-title2-new">برای ارسال تیکت به پشتیبانی <a href="">کلیک
+                                                    کنید</a></span>
+                                        </div>
+
                                     </div>
 
                                 </div>
-
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!-- Copyright -->
-        <div class="text-center p-4 d-flex align-items-center justify-content-between copyright">
-            <!-- Right -->
-            <a class="text-left col-md-6 text-white " href=" ">کلیه حقوق این سایت متعلق به بی بیت می&zwnj;باشد.
-                استفاده
-                از مطالب وبلاگ بی بیت با ذکر منبع بلامانع است</a>
-            <div class="col-md-5 text-left social-icon">
+            <!-- Copyright -->
+            <div class="text-center p-4 d-flex align-items-center justify-content-between copyright">
+                <!-- Right -->
+                <a class="text-left col-md-6 text-white " href=" ">کلیه حقوق این سایت متعلق به بی بیت می&zwnj;باشد.
+                    استفاده
+                    از مطالب وبلاگ بی بیت با ذکر منبع بلامانع است</a>
+                <div class="col-md-5 text-left social-icon">
 
-                <a href="" class="mr-3 text-reset">
-                    <img src="img/icon-social/twitter.png" alt="">
-                </a>
-                <a href="" class="mr-3 text-reset">
-                    <img src="img/icon-social/social-media.png" alt="">
-                </a>
-                <a href="" class="mr-3 text-reset">
-                    <img src="img/icon-social/pinterest.png" alt="">
-                </a>
-                <a href="" class="mr-3 text-reset">
-                    <img src="img/icon-social/Path 5394.png" alt="">
-                </a>
-                <a href="" class="mr-3 text-reset">
-                    <img src="img/icon-social/Layer 2.png" alt="">
-                </a>
+                    <a href="" class="mr-3 text-reset">
+                        <img src="img/icon-social/twitter.png" alt="">
+                    </a>
+                    <a href="" class="mr-3 text-reset">
+                        <img src="img/icon-social/social-media.png" alt="">
+                    </a>
+                    <a href="" class="mr-3 text-reset">
+                        <img src="img/icon-social/pinterest.png" alt="">
+                    </a>
+                    <a href="" class="mr-3 text-reset">
+                        <img src="img/icon-social/Path 5394.png" alt="">
+                    </a>
+                    <a href="" class="mr-3 text-reset">
+                        <img src="img/icon-social/Layer 2.png" alt="">
+                    </a>
+                </div>
+
+
+                <!-- Right -->
             </div>
-
-
-            <!-- Right -->
-        </div>
-        <!-- Copyright -->
+            <!-- Copyright -->
         </div>
     </footer>
     <!-- Footer -->
@@ -840,7 +896,7 @@
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="js/particles.js"></script>
     <script src="js/stats.js"></script>
     <script src="js/main.js"></script>
